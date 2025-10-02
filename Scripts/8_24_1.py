@@ -10,6 +10,7 @@ while True:
     lines.append(line[:-1])
 locations = copy.deepcopy(lines)
 x = type(locations)
+
 for i in range(0,len(locations)):
     locations[i] = list(locations[i])
 characters = []

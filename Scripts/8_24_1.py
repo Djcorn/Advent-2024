@@ -1,5 +1,4 @@
 import pathlib
-import numpy
 import copy
 f = open(pathlib.Path(r"C:\\Users\cornelld\Advent\Inputs\input_8_24.txt"), 'r')
 lines = []

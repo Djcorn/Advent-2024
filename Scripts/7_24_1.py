@@ -8,15 +8,12 @@ def try_both(items, totals, total):
         for i in range(0, len(totals)):
             new_sum = totals[i] + items[0]
             new_product = totals[i] * items[0]
-            new_concat = int(str(totals[i]) + str(items[0]))
             if new_sum > total:
                 new_sum=-1
             if new_product > total:
                 new_product = -1
             totals = numpy.append(totals, new_product)
-            totals = numpy.append(totals, new_concat)
             totals[i] = new_sum
-
             if len(items) == 0:
                 break
             i+=1
@@ -37,9 +34,8 @@ while True:
 
     new_sum = items[0] + items[1]
     new_product = items[0] * items[1]
-    new_concat = int(str(items[0]) + str(items[1]))
     items = items[2:]
-    totals = [new_sum, new_product, new_concat]
+    totals = [new_sum, new_product]
     final_sum += try_both(items, totals, total)
 
 print(final_sum)

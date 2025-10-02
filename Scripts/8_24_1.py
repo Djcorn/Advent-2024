@@ -1,6 +1,6 @@
 import pathlib
 import copy
-f = open(pathlib.Path(r"C:\\Users\cornelld\Advent\Inputs\input_8_24.txt"), 'r')
+f = open(pathlib.Path(r"C:\\Users\cornelld\Documents\Advent-2024\Inputs\input_8_24.txt"), 'r')
 lines = []
 totals = 0
 while True:

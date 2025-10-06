@@ -24,7 +24,7 @@ def find_path(x,y, counter, dir):
         elif x<=38 and lines[x + 1][y] == counter and dir>=2:
             stack.append((x, y, counter,1))
             x += 1
-        elif y>=0 and lines[x][y - 1] == counter and dir>=1:
+        elif y>0 and lines[x][y - 1] == counter and dir>=1:
             y -= 1
         else:
             if len(stack) == 0:

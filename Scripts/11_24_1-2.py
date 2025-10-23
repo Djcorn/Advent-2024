@@ -1,10 +1,11 @@
 import pathlib
 import numpy
 import copy
+import tqdm
 f = open(pathlib.Path(r"C:\\Users\cornelld\Documents\Advent-2024\Inputs\input_11_24.txt"), 'r')
 line = f.readline()
 lines = line.split(" ")
-for i in range(0,75):
+for i in tqdm.tqdm(range(0,75)):
     j = 0
     while j < len(lines):
         if int(lines[j]) == 0:

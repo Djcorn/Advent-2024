@@ -27,7 +27,5 @@ while True:
     print(addition)
     total+=int(addition)
 
-   # val = int(str(first)+str(second))
-   # sum += val
 print(total)
 

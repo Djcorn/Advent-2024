@@ -1,6 +1,5 @@
 import pathlib
 import numpy as np
-from pandas.core.interchange.from_dataframe import primitive_column_to_ndarray
 
 f = open(pathlib.Path(r"C:\\Users\cornelld\Documents\Advent-2024\Inputs\input_6_25.txt"), 'r')
 sum = 0
@@ -47,23 +46,3 @@ while len(transposed)>0:
                 total =value
     final_total += total
 print(final_total)
-
-
-
-#         total = 0
-#         for j in i:
-#             total *= int(j)
-#     var = i[len(i)-1]
-#     if var == '*':
-#         total = int(i[0])
-#         for j in range(1,len(i)-1):
-#             total *= int(i[j])
-#         print(total)
-#     if var == '+':
-#         total = int(i[0])
-#         for j in range(1, len(i) - 1):
-#             total += int(i[j])
-#         print(total)
-#     final_total += total
-# print(final_total)
-
